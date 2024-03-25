@@ -393,7 +393,9 @@ main() {
   local right_column1=$show_window
 
   # Right column 2 by default shows the current Session name.
-  local right_column2=$show_session
+  # local right_column2=$show_session
+
+  local left_column2=$show_session_left
 
   # Window status by default shows the current directory basename.
   local window_status_format=$show_directory_in_window_status
@@ -419,7 +421,7 @@ main() {
     right_column2="$right_column2$show_date_time"
   fi
 
-  set status-left ""
+  set status-left "${left_column1}${left_column2}"
   set status-right "${right_column1}${right_column2}"
 
   setw window-status-format "${window_status_format}"
@@ -427,8 +429,14 @@ main() {
 
   # --------=== Modes
   #
+<<<<<<< HEAD
 >>>>>>> 06ac771 (Innitial changes):dracuccin.tmux
   setw clock-mode-colour "${thm_blue}"
+||||||| parent of 0a99301 (Update powerline colors)
+  setw clock-mode-colour "${thm_blue}"
+=======
+  setw clock-mode-colour "${thm_yellow}"
+>>>>>>> 0a99301 (Update powerline colors)
   setw mode-style "fg=${thm_pink} bg=${thm_black4} bold"
 
   tmux "${tmux_commands[@]}"

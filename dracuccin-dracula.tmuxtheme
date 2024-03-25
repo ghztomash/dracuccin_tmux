@@ -2,16 +2,16 @@
 # WARNING: hex colors can't contain capital letters
 
 # --> Dracuccin
-thm_bg="#1e1e2e"
+thm_bg="#21222c"
 thm_fg="#f8f8f2"
 thm_cyan="#a4ffff"
-thm_black="#181825"
+thm_black="#6272a4"
 thm_gray="#313244"
-thm_magenta="#ff92df"
-thm_pink="#f5c2e7"
+thm_magenta="#d6acff"
+thm_pink="#ff92df"
 thm_red="#ff6e6e"
 thm_green="#69ff94"
 thm_yellow="#ffffa5"
-thm_blue="#d6acff"
-thm_orange="#fab387"
-thm_black4="#585b70"
+thm_blue="#bd93f9"
+thm_orange="#f1fa8c"
+thm_black4="#282a36"
