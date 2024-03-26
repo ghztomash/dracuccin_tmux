@@ -28,9 +28,9 @@ You can create a custom module by following the steps outlined below. This can b
 
       index=$1 # This variable is used internally by the module loader in order to know the position of this module
 
-      icon="$(  get_tmux_option "@catppuccin_<module_name>_icon"  ""           )"
-      color="$( get_tmux_option "@catppuccin_<module_name>_color" "$thm_orange" )"
-      text="$(  get_tmux_option "@catppuccin_<module_name>_text"  "hello world" )"
+      icon="$(  get_tmux_option "@dracuccin_<module_name>_icon"  ""           )"
+      color="$( get_tmux_option "@dracuccin_<module_name>_color" "$thm_orange" )"
+      text="$(  get_tmux_option "@dracuccin_<module_name>_text"  "hello world" )"
 
       module=$( build_status_module "$index" "$icon" "$color" "$text" )
 
@@ -41,14 +41,14 @@ You can create a custom module by following the steps outlined below. This can b
 3. Add the custom module to the list of modules in `.tmux.conf`
 
     ```bash
-    set -g @catppuccin_status_modules_right "... <module_name> ..."
+    set -g @dracuccin_status_modules_right "... <module_name> ..."
     ```
 
 ## Customization
 
 Change the icon to one from [Nerd Fonts](https://www.nerdfonts.com/cheat-sheet).
 
-Change the color to one of the [official colors](../catppuccin-macchiato.tmuxtheme), for instance `"$thm_cyan"`, or to a hexadecimal color like `"#00ff00"`.
+Change the color to one of the [official colors](../dracuccin-macchiato.tmuxtheme), for instance `"$thm_cyan"`, or to a hexadecimal color like `"#00ff00"`.
 
 The text to display can either be:
 
@@ -68,5 +68,5 @@ set -g status-interval <number of seconds>
 To configure a custom path for your modules, set this option:
 
 ```tmux
-set -g @catppuccin_custom_plugin_dir "<path>"
+set -g @dracuccin_custom_plugin_dir "<path>"
 ```

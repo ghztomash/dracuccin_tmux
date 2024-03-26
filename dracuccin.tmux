@@ -23,7 +23,7 @@ main() {
   local modules_pane_path=$PLUGIN_DIR/pane
 
   # load local theme
-  local theme="$(get_tmux_option "@dracuccin_flavour" "dracuccin")"
+  local theme="$(get_tmux_option "@dracuccin_flavour" "dracula")"
   # NOTE: Pulling in the selected theme by the theme that's being set as local
   # variables.
   # shellcheck source=dracuccin-frappe.tmuxtheme
