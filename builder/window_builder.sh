@@ -94,7 +94,7 @@ build_window_icon() {
 
   if [ "$window_status_icon_enable" = "no" ]
   then
-    local show_window_status=" #F"
+    local show_window_status="#{?#F,#F, }"
   fi
 
   echo "$show_window_status"
